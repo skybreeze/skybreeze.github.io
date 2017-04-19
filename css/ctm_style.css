@@ -11,3 +11,53 @@
 .benefit .service_grid .fa-inc-left {
 	margin:  0 .7em 0 .2em;
 }
+
+
+.promo-container {
+	padding-top: 80px;
+}
+
+ul.dropdown-menu {
+	border-bottom: none;
+	margin-top: 12px;
+}
+.droplink {
+	color: #666 !important;
+}
+.droplink:hover {
+	color: #fff !important;
+}
+
+.themebox {
+	padding: 5px;
+	border: 1px solid #ccc;
+	margin-bottom: 30px;
+}
+.theme-img  img {
+	width: 100%;
+}
+.theme-btn {
+	padding:  20px 0;
+	background: #f3fffc;
+}
+.theme-btn h4 {
+	display: inline-block;
+	padding: 10px;
+	line-height: 10px;
+	margin-bottom: 0;
+	font-size: 20px;
+	margin-top: 5px;
+}
+.theme-btn a {
+	float: right;
+	padding: 10px 25px;
+	background: #1BBC9B ;
+	color: #fff;
+	font-size: 14px;
+	transition: all .3s ease;
+	margin-right: 15px;
+}
+.theme-btn a:hover {
+	background:  #445c7f;
+	text-decoration: none;
+}

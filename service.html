@@ -68,13 +68,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="container">
                 <a class="toggleMenu" href="#">Menu</a>
                 <ul class="nav">
-                    <li ><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li class="active"><a href="service.html">Service</a></li>
-                    <li><a href="plans.html">Hosting Plans</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="plans.html">Hosting</a></li>
                     <li><a href="domain.html">Domain</a></li>
                     <li><a href="webmail.html">WebMail</a></li>
-                    <li><a href="store.html">Store</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Store<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="droplink" href="store.html">Detail</a></li>
+                        <li><a class="droplink" href="theme.html">Theme</a></li>
+                      </ul>
+                    </li>
                     <li><a href="promo.html">Promo</a></li>
                     <li><a href="reseller.html">Reseller</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -323,6 +329,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 </div>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
 

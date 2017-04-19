@@ -68,13 +68,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="container">
                 <a class="toggleMenu" href="#">Menu</a>
                 <ul class="nav">
-                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="service.html">Service</a></li>
-                    <li class="active"><a href="plans.html">Hosting Plans</a></li>
+                    <li><a href="plans.html">Hosting</a></li>
                     <li><a href="domain.html">Domain</a></li>
                     <li><a href="webmail.html">WebMail</a></li>
-                    <li><a href="store.html">Store</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Store<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="droplink" href="store.html">Detail</a></li>
+                        <li><a class="droplink" href="theme.html">Theme</a></li>
+                      </ul>
+                    </li>
                     <li><a href="promo.html">Promo</a></li>
                     <li><a href="reseller.html">Reseller</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -93,38 +99,121 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="about_grid">
 	<div class="container">
 		<h4 class="tz-title-4 tzcolor-blue">
-            <p class="tzweight_Bold"><span class="m_1">Follow<br></span>Steps</p>
-        </h4>
-		<div class="plans_grid">
-		    <div class="col-md-4">
-				<ul class="project_box">
-				  <li class="mini-post-meta1">1</li>
-				  <li class="desc"><h5><a href="#">Choose Your Plan</a></h5>
-				  	 <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
-				  </li>	
-				  <div class="clearfix"> </div>
-				</ul>
-			</div>
-			<div class="col-md-4">
-				<ul class="project_box">
-				  <li class="mini-post-meta1">2</li>
-				  <li class="desc"><h5><a href="#">Creative Your Account</a></h5>
-				  	 <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
-				  </li>	
-				  <div class="clearfix"> </div>
-				</ul>
-			</div>
-			<div class="col-md-4">
-				<ul class="project_box">
-				  <li class="mini-post-meta1">3</li>
-				  <li class="desc"><h5><a href="#">Launch Your Hosting</a></h5>
-				  	 <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
-				  </li>	
-				  <div class="clearfix"> </div>
-				</ul>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
+                <p class="tzweight_Bold"><span class="m_1">our<br></span>Benefits</p>
+            </h4>
+            <div class="col-md-3">
+                <div class="pricing-table-grid">
+                    <h3><span class="dollar">Rp </span>15<span class="dollar">rb</span> <br><span class="month">Per Bulan</span></h3>
+                    <ul>
+                        <li><span>Standard Plan</span></li>
+                        <li><a href="#">500 MB Storage</a></li>
+                        <li><a href="#">256 MB Virtual Memory</a></li>
+                        <li><a href="#">Half Core CPU</a></li>
+                        <li><a href="#">Managed Hosting</a></li>
+                        <li><a href="#">Unlimited Bandwidth</a></li>
+                    </ul>
+                    <a class="popup-with-zoom-anim order-btn" href="#small-dialog">Order</a>
+                </div>
+                <div id="small-dialog" class="mfp-hide">
+                    <div class="pop_up">
+                        <div class="payment-online-form-left">
+                            <form>
+                                <h4><span class="shipping"> </span>Shipping</h4>
+                                <ul>
+                                    <li><input class="text-box-dark" type="text" value="Frist Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Frist Name';}"></li>
+                                    <li><input class="text-box-dark" type="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
+                                </ul>
+                                <ul>
+                                    <li><input class="text-box-dark" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
+                                    <li><input class="text-box-dark" type="text" value="Company Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Company Name';}"></li>
+                                </ul>
+                                <ul>
+                                    <li><input class="text-box-dark" type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}"></li>
+                                    <li><input class="text-box-dark" type="text" value="Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}"></li>
+                                    <div class="clearfix"> </div>
+                                </ul>
+                                <div class="clear"> </div>
+                            <ul class="payment-type">
+                                <h4><span class="payment"> </span> Payments</h4>
+                                <li>
+                                    <span class="col_checkbox">
+                                    <input id="3" class="css-checkbox1" type="checkbox">
+                                    <label for="3" name="demo_lbl_1" class="css-label1"> </label>
+                                    <a class="visa" href="#"> </a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="col_checkbox">
+                                        <input id="4" class="css-checkbox2" type="checkbox">
+                                        <label for="4" name="demo_lbl_2" class="css-label2"> </label>
+                                        <a class="paypal" href="#"> </a>
+                                    </span>
+                                </li>
+                                <div class="clearfix"> </div>
+                            </ul>
+                                <ul>
+                                    <li><input class="text-box-dark" type="text" value="Card Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Card Number';}"></li>
+                                    <li><input class="text-box-dark" type="text" value="Name on card" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name on card';}"></li>
+                                    <div class="clearfix"> </div>
+                                </ul>
+                                <ul>
+                                    <li><input class="text-box-light hasDatepicker" type="text" id="datepicker" value="Expiration Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Expiration Date';}"><em class="pay-date"> </em></li>
+                                    <li><input class="text-box-dark" type="text" value="Security Code" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Security Code';}"></li>
+                                    <div class="clearfix"> </div>
+                                </ul>
+                                <ul class="payment-sendbtns">
+                                    <li><input type="reset" value="Cancel"></li>
+                                    <li><input type="submit" value="Process order"></li>
+                                </ul>
+                                <div class="clearfix"> </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="col-md-3">
+                <div class="pricing-table-grid">
+                    <h3><span class="dollar">Rp </span>100<span class="dollar">rb</span> <br><span class="month">Per Bulan</span></h3>
+                    <ul>
+                        <li><span>Advanced Plan</span></li>
+                        <li><a href="#">1 GB Storage</a></li>
+                        <li><a href="#">Indonesia Data Center</a></li>
+                        <li><a href="#">256 MB Virtual Memory</a></li>
+                        <li><a href="#">Single Core CPU</a></li>
+                        <li><a href="#">Unlimited Bandwidth</a></li>
+                    </ul>
+                    <a class="popup-with-zoom-anim order-btn" href="#small-dialog">Order</a>
+                </div>
+             </div>	
+             <div class="col-md-3">
+                <div class="pricing-table-grid">
+                    <h3><span class="dollar">Rp </span>400<span class="dollar">rb</span> <br><span class="month">Per Bulan</span></h3>
+                    <ul>
+                        <li><span>Business Plan</span></li>
+                        <li><a href="#">60 GB Storage</a></li>
+                        <li><a href="#">Free cPanel/WHM</a></li>
+                        <li><a href="#">1024 MB Virtual Memory</a></li>
+                        <li><a href="#">Single Core CPU</a></li>
+                        <li><a href="#">Unlimited Bandwidth</a></li>
+                    </ul>
+                    <a class="popup-with-zoom-anim order-btn" href="#small-dialog">Order</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="pricing-table-grid">
+                    <h3><span class="dollar">Rp </span>1000<span class="dollar">rb</span> <br><span class="month">Per Bulan</span></h3>
+                    <ul>
+                        <li><span>Gold Plan</span></li>
+                        <li><a href="#">SATA 2x1 TB Storage</a></li>
+                        <li><a href="#">Indonesia Data Center</a></li>
+                        <li><a href="#">DDR3 16GB Virtual Memory</a></li>
+                        <li><a href="#">3.3 GHZ CPU</a></li>
+                        <li><a href="#">Unlimited Bandwidth</a></li>
+                    </ul>
+                    <a class="popup-with-zoom-anim order-btn" href="#small-dialog">Order</a>
+                </div>
+            </div>	
+            <div class="clearfix"> </div>
      </div>
 </div>
 <div class="about_grid1">
@@ -458,6 +547,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 </div>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
 
