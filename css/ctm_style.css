@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 /*HOME*/
@@ -60,4 +61,18 @@ ul.dropdown-menu {
 .theme-btn a:hover {
 	background:  #445c7f;
 	text-decoration: none;
+=======
+
+
+/*HOME*/
+
+.benefit .service_grid .fa {
+	float: left;
+	font-size: 60px;
+	margin:  0 .5em 0 0;
+	color: #1BBC9B;
+}
+.benefit .service_grid .fa-inc-left {
+	margin:  0 .7em 0 .2em;
+>>>>>>> origin/master
 }
