@@ -443,7 +443,7 @@ i.s6{
   top: 20px;
 }
 .features{
-	background:#fffbde;
+	background: #e0fffc;
 	padding:5em 0;
 }
 p.m_2{
@@ -577,10 +577,9 @@ span.m_7{
   margin: 0;
   padding:20px 0;
   color: #556b72;
-  text-transform: uppercase;
-  font-size: 3em;
+  font-size: 2.2em;
   font-weight: 800;
-  line-height: 0.5em;
+  line-height: 0.75em;  
 }
 /*---- pricing -----*/
 .pricing-table-grid{
