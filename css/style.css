@@ -209,7 +209,8 @@ ul.nav li.active a, .nav li a:hover {
 	}
 }
 .banner{
-	background:url(../images/banner.jpg)no-repeat;
+  background:url(../images/banner.jpg)no-repeat;
+	background:none;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

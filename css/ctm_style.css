@@ -28,6 +28,10 @@ ul.dropdown-menu {
 	color: #fff !important;
 }
 
+.flexslider .slides img {
+	width: 100% !important;
+}
+
 .themebox {
 	padding: 5px;
 	border: 1px solid #ccc;
