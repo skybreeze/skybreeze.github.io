@@ -101,3 +101,29 @@ ul.dropdown-menu {
 	letter-spacing: .4s;
 	color: #666;
 }
+
+.inputgroupdomain .form-control {
+	display: inline-block;
+	float: left;
+	border-radius: 0;
+}
+.inputgroupdomain .form-control:nth-child(1){
+	width: 72.5%;
+}
+.inputgroupdomain .form-control:nth-child(2){
+	width: 12.5%;
+	left: -10px;
+}
+.inputgroupdomain .form-control:nth-child(3){
+	width: 15%;
+}
+
+
+ul.charge {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+span.m_12,
+span.m_11 {
+	font-size: 17px;
+}
