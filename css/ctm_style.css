@@ -77,7 +77,10 @@
 
 .form-billing h3 {
 	margin-bottom: 0px;
-	font-size: 30px;
+	font-size: 27px;
+}
+.form-billing p {
+	font-size: 14px;
 }
 .form-billing h4 {
 	margin-bottom: 0;
@@ -166,4 +169,38 @@ span.m_11 {
 
 .resellernews {
 	padding: 47.5px 0;
+}
+
+.paysection {
+	text-align: center;
+}
+.paysection p {
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+.paysection a {
+	color: #428bca;
+}
+.ordernow {
+	color: #fff;
+	padding: 20px 30px;
+	border: none;
+	border-radius: 0;
+	font-size: 20px;
+	background: #1BBC9B;
+	margin-bottom: 20px;
+}
+
+.detail-order-header {
+	padding: 40px 15px;
+	background: #1BBC9B;
+	color: #fff;
+}
+.detail-order-header h4 {
+ 	font-size: 20px;
+ 	margin-bottom: 5px;
+}
+.detail-order-header p {
+	font-size: 14px;
+	font-style: italic;
 }
