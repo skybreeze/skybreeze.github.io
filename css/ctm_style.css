@@ -173,6 +173,7 @@ span.m_11 {
 
 .paysection {
 	text-align: center;
+	padding-top: 30px;
 }
 .paysection p {
 	font-size: 14px;
@@ -203,4 +204,19 @@ span.m_11 {
 .detail-order-header p {
 	font-size: 14px;
 	font-style: italic;
+}
+
+.billing-info table td {
+	font-size: 13px;
+}
+.billing-info table tr td:nth-child(2) {
+	border-left: 1px solid #ccc;
+}
+.detail-price span{
+	text-align: right !important;
+	float: right;
+}
+.totaled-price {
+	text-align: right !important;
+	font-weight: bold;
 }
