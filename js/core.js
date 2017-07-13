@@ -90,7 +90,7 @@ $(document).ready(function() {
 	});
     
 });
-
+/*
 $('.scrollto').click(function(){
 	event.preventDefault();
 
@@ -98,4 +98,9 @@ $('.scrollto').click(function(){
         	scrollTop: $( $(this).attr('href') ).offset().top
     	}, 1000);
     	return false;
+});*/
+
+$(".scrollto").click(function(e){       
+    e.preventDefault();
+    $('html,body').animate({scrollTop:$('.about').offset().top}, 1000);
 });
