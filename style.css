@@ -545,6 +545,9 @@ ol.carousel-indicators {
 	margin-bottom: 38px;
 
 }
+.contact textarea {
+	max-width: 100%;
+}
 .input-textbox {
 	font-size: 16px;
 	font-weight: 300;
