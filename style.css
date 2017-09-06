@@ -7,7 +7,7 @@ body {
 }
 
 body {
-	background: #fff;
+	background: #fefefe;
 }
 
 h1,h2,h3,h4,h5,h6,
@@ -21,29 +21,35 @@ a:hover {
 
 /* FONTS */
 @font-face {
-  	font-family: 'Rubik-Light';
-  	src:  	url('fonts/Rubik-Light.woff') format('woff'), 
-  		  	url('fonts/Rubik-Light.eot') format('embedded-opentype'), 
-  			url('fonts/Rubik-Light.ttf')  format('truetype'), 
-  			url('fonts/Rubik-Light.svg#Rubik-Light') format('svg');
+    font-family: 'Rubik Light';
+      src: url('fonts/rubiklight.eot'); /* IE9 Compat Modes */
+      src: url('fonts/rubiklight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('fonts/rubiklight.woff2') format('woff2'), /* Super Modern Browsers */
+           url('fonts/rubiklight.woff') format('woff'), /* Super Modern Browsers */
+           url('fonts/rubiklight.ttf')  format('truetype'), /* Safari, Android, iOS */
+           url('fonts/rubiklight.svg#svgFontName') format('svg'); /* Legacy iOS */
   	font-weight: normal;
   	font-style: normal;
 }
 @font-face {
-	font-family: 'Rubik-Regular';
-  	src:  	url('fonts/Rubik-Regular.woff') format('woff'), 
-  		  	url('fonts/Rubik-Regular.eot') format('embedded-opentype'), 
-  			url('fonts/Rubik-Regular.ttf')  format('truetype'), 
-  			url('fonts/Rubik-Regular.svg#Rubik-Regular') format('svg');
+	font-family: 'Rubik Medium';
+      src: url('fonts/rubikmedium.eot'); /* IE9 Compat Modes */
+      src: url('fonts/rubikmedium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('fonts/rubikmedium.woff2') format('woff2'), /* Super Modern Browsers */
+           url('fonts/rubikmedium.woff') format('woff'), /* Super Modern Browsers */
+           url('fonts/rubikmedium.ttf')  format('truetype'), /* Safari, Android, iOS */
+           url('fonts/rubikmedium.svg#svgFontName') format('svg'); /* Legacy iOS */
   	font-weight: normal;
   	font-style: normal;
 }
 @font-face {
-  	font-family: 'Rubik-Medium';
-  	src:  	url('fonts/Rubik-Medium.woff') format('woff'), 
-  		  	url('fonts/Rubik-Medium.eot') format('embedded-opentype'), 
-  			url('fonts/Rubik-Medium.ttf')  format('truetype'), 
-  			url('fonts/Rubik-Medium.svg#Rubik-Medium') format('svg');
+  	font-family: 'Rubik Regular';
+      src: url('fonts/rubikregular.eot'); /* IE9 Compat Modes */
+      src: url('fonts/rubikregular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('fonts/rubikregular.woff2') format('woff2'), /* Super Modern Browsers */
+           url('fonts/rubikregular.woff') format('woff'), /* Super Modern Browsers */
+           url('fonts/rubikregular.ttf')  format('truetype'), /* Safari, Android, iOS */
+           url('fonts/rubikregular.svg#svgFontName') format('svg'); /* Legacy iOS */
   	font-weight: normal;
   	font-style: normal;
 }
@@ -58,7 +64,7 @@ a:hover {
 	padding: 37px 60px 37px;
 	min-height: 124px;
 	border: none;
-	margin-bottom: 0;	
+	margin-bottom: 0;
 	background: #fff;
 }
 @media (max-width: 960px){
@@ -140,7 +146,7 @@ a:hover {
 
 .main-navbar .navbar-nav > li > a {
 	padding: 17px 12px;
-	font-family: "Rubik-Medium" , sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	font-size: 14px;
 	color: #4e565e;
 	text-transform: uppercase;
@@ -152,9 +158,9 @@ a:hover {
 @media (max-width: 885px){
 	.main-navbar .navbar-nav > li {
 		margin: 0 0px;
-	}	
+	}
 }
-.main-navbar .navbar-nav > li > a.signup { 
+.main-navbar .navbar-nav > li > a.signup {
 	padding: 17px 27px 17px 32px;
 	background: #fff;
 	border: 1px solid #2788e6;
@@ -162,11 +168,11 @@ a:hover {
 	border-radius: 5px;
 }
 @media (max-width: 1220px){
-	.main-navbar .navbar-nav > li > a.signup { 
+	.main-navbar .navbar-nav > li > a.signup {
 		padding: 17px 20px 17px 20px;
-	}	
+	}
 }
-.main-navbar .navbar-nav > li > a:hover, 
+.main-navbar .navbar-nav > li > a:hover,
 .main-navbar .navbar-nav > li > a:focus {
 	color: #2788e6;
 }
@@ -180,7 +186,7 @@ a:hover {
 }
 .navbar-brand h1 {
 	float: right;
-	font-family: "Rubik-Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	font-size: 31.68px;
 	color: #1478d8;
 	margin-top: 0;
@@ -196,7 +202,7 @@ a:hover {
         display: block;
         text-align: center;
 	}
-	.navbar>.container .navbar-brand, 
+	.navbar>.container .navbar-brand,
     .navbar>.container-fluid .navbar-brand {
         margin-left: -90px;
     }
@@ -248,12 +254,12 @@ a:hover {
 	padding: 100px 0 0 0;
 }
 .hero-wrapper h1 {
-	font-family: "Rubik-Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	color: #2788e6;
 }
 .hero-wrapper p {
 	color: #2a2a2a;
-	font-family: "Rubik-Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	opacity: 0.7;
 	line-height: 32px;
 }
@@ -262,13 +268,13 @@ a:hover {
 		background-size: 65%;
 		background-position: 100% 50px;
 	}
-	.hero-wrapper h1 {		
-		font-size: 45px;		
+	.hero-wrapper h1 {
+		font-size: 45px;
 		width: 430px;
 		margin-bottom: 30px;
 	}
-	.hero-wrapper p {		
-		font-size: 18px;		
+	.hero-wrapper p {
+		font-size: 18px;
 		max-width: 430px;
 		padding-bottom: 100px;
 	}
@@ -278,14 +284,14 @@ a:hover {
 		background-size: 65%;
 		background-position: 100% 50px;
 	}
-	.hero-wrapper h1 {		
+	.hero-wrapper h1 {
 		text-align: center;
-		font-size: 45px;		
+		font-size: 45px;
 		margin-top: 0;
 		margin-bottom: 30px;
 	}
-	.hero-wrapper p {		
-		font-size: 18px;		
+	.hero-wrapper p {
+		font-size: 18px;
 		max-width: 430px;
 		padding-bottom: 100px;
 	}
@@ -358,7 +364,7 @@ a:hover {
 	padding: 24px 37px;
 	text-transform: uppercase;
 	font-size: 14px;
-	font-family: "Rubik-Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	line-height: initial;
 	background: #2788e6;
 	color: #fff;
@@ -378,7 +384,7 @@ a:hover {
 	border-radius: 50%;
 	padding: 10px;
 	padding-top: 10px;
-	font-family: "Rubik-Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	color: #b2c1cf;
 	font-size: 14px;
 	margin: 10px 14px;
@@ -426,7 +432,7 @@ a:hover {
 	.find-form-wrapper .group-input:nth-child(5){
 		width: 10%;
 	}
-	
+
 	.find-form-wrapper .group-input .find-btn {
 		margin: 0;
 		padding: 24px 21px;
@@ -485,7 +491,7 @@ a:hover {
 	text-align: center;
 }
 .section-title {
-	font-family: "Rubik-Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 42px;
 	color: #2788e6;
 }
@@ -499,14 +505,14 @@ a:hover {
 	vertical-align: middle;
 }
 .benefit .benefit-desc {
-	font-family: "Rubik-Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 16px;
 	line-height: 27px;
 	color: #767676;
 	letter-spacing: .25px;
 }
 .benefit .benefit-title {
-	font-family: "Rubik-Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	font-size: 16px;
 	color: #9daebf;
 	margin-bottom: 15px;
@@ -527,7 +533,7 @@ a:hover {
 	}
 }
 .route .route-desc {
-	font-family: "Rubik-Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	font-size: 16px;
 	color: #9daebf;
 	margin-bottom: 90px;
@@ -539,12 +545,13 @@ a:hover {
 	padding: 20px;
 	margin-bottom: 38px;
 	background: #fff;
+	border-radius: 10px;
 	display: flex;
 	justify-content: space-between;
 	box-shadow: 0 2px 28px rgba(0, 0, 0, 0.09);
 }
 
-.route-item .dest, 
+.route-item .dest,
 .route-item .price {
 	text-align: left;
 }
@@ -555,13 +562,13 @@ a:hover {
 	margin: 0;
 }
 .route-item .price p:nth-child(1) {
-	font-family: "Rubik-Light" ,sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 16px;
 	color: #767676;
 	margin-bottom: 5px;
 }
 .route-item .price p:nth-child(2) {
-	font-family: "Rubik-Regular", sans-serif;
+	font-family: "Rubik Regular", Fallback, sans-serif;
 	font-size: 25px;
 	color: #2788e6;
 }
@@ -572,7 +579,7 @@ a:hover {
 .route-item .dest li {
 	list-style: none;
 	padding-left: 20px;
-	font-family: "Rubik-Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	font-size: 16px;
 	color: #2a2a2a;
 	position: relative;
@@ -611,7 +618,7 @@ a:hover {
 }
 .popular-btn a {
 	padding: 20px 30px;
-	font-family: "Rubik-Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	font-size: 14px;
 	color: #fff;
 	text-transform: uppercase;
@@ -620,6 +627,12 @@ a:hover {
 	border-radius: 5px;
 }
 
+@media screen and (max-width: 320px) {
+	.popular-btn a {
+		padding: 15px 10px;
+		font-size: 13px;
+	}
+}
 .carpooling-title {
 	margin-bottom: 60px !important;
 }
@@ -665,7 +678,7 @@ a:hover {
 	margin-right: 25px;
 }
 .user-title {
-	font-family: "Rubik-Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 32px;
 	margin-bottom: 0;
 }
@@ -678,7 +691,7 @@ a:hover {
 	color: #eab244;
 }
 .user-text {
-	font-family: "Rubik-Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	font-size: 16px;
 	text-transform: uppercase;
 	color: #9cadbe;
@@ -738,7 +751,7 @@ a:hover {
 		padding-left: 20px;
 	}
 	.user-title {
-		font-family: "Rubik-Light", sans-serif;
+		font-family: "Rubik Light", Fallback, sans-serif;
 		font-size: 24px;
 		margin-bottom: 0;
 	}
@@ -766,7 +779,7 @@ a:hover {
 	max-width: 460px;
 	margin: 0 auto;
 	text-align: center;
-	
+
 }
 .main-logo img {
 	width: 37px;
@@ -775,7 +788,7 @@ a:hover {
 	vertical-align: inherit;
 }
 .main-logo h1 {
-	font-family: "Rubik-Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	line-height: 13.7px;
 	font-size: 31.68px;
 	color: #1478d8;
@@ -791,7 +804,7 @@ a:hover {
 .signin-area .signin-title,
 .contact-area .signin-title {
 	color: #4e565e;
-	font-family: "Rubik-Regular", sans-serif;
+	font-family: "Rubik Regular", Fallback, sans-serif;
 	font-size: 17px;
 	margin-bottom: 0;
 }
@@ -809,12 +822,12 @@ a:hover {
   box-sizing: initial !important;
 }
 .field {
-	font-family: "Rubik-Regular", sans-serif;
+	font-family: "Rubik Regular", Fallback, sans-serif;
 	font-size: 15px;
 	color: #666;
 	padding: 16px 22px;
 	border-radius: 5px;
-	border: 1px solid #d7dfe8; 
+	border: 1px solid #d7dfe8;
 	width: calc(100%);
 	margin-bottom: 22px;
 	line-height: auto;
@@ -885,7 +898,7 @@ a:hover {
 	color: #8498ab;
 	text-align: left;
 	margin-bottom: 22px;
-	font-family: "Rubik-Regular", sans-serif;
+	font-family: "Rubik Regular", Fallback, sans-serif;
 	font-size: 15px;
 }
 .signup-area form [type="radio"]:checked,
@@ -947,9 +960,9 @@ a:hover {
     transform: scale(1);
 }
 
-.signup-btn, 
+.signup-btn,
 .signin-btn {
-	font-family: "Rubik-Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	background: #2788e6;
 	font-size: 14px;
 	letter-spacing: .5px;
@@ -972,7 +985,7 @@ a:hover {
 	margin-bottom: 19px;
 }
 .signup-agreement {
-	font-family: "Rubik-Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 16px;
 	color: #767676;
 	line-height: 27px;
@@ -986,7 +999,7 @@ a:hover {
 	margin: 34px 0;
 }
 .have-account {
-	font-family: "Rubik-Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	color: #767676;
 	font-size: 16px;
 	margin-bottom: 90px;
@@ -1002,7 +1015,7 @@ a:hover {
 .styled-checkbox + label {
 	float: left;
   	position: relative;
-  	font-family: "Rubik-Light",sans-serif;
+  	font-family: "Rubik Light", Fallback, sans-serif;
   	font-size: 16px;
   	font-weight: 300;
   	color: #767676;
@@ -1019,7 +1032,7 @@ a:hover {
   	width: 20px;
   	height: 20px;
   	background: white;
-  	border: 1px solid #d7dfe8; 
+  	border: 1px solid #d7dfe8;
   	margin-top: -2px;
 }
 .styled-checkbox:hover + label:before {
@@ -1049,7 +1062,7 @@ a:hover {
 
 .forgot {
 	float: right;
-	font-family: "Rubik-Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 15px;
 	color: #2788e6;
 
@@ -1069,7 +1082,7 @@ a:hover {
 	clear: both;
 }
 .dont-have-account {
-	font-family: "Rubik-Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	color: #767676;
 	font-weight: 300;
 	font-size: 16px;
@@ -1083,7 +1096,7 @@ a:hover {
 
 /*CONTACT*/
 .pagetitle {
-	font-family: "Rubik-Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 42px;
 	font-weight: 300;
 	color: #2788e6;
@@ -1091,7 +1104,7 @@ a:hover {
 	text-align: center;
 }
 .subpage-title {
-	font-family: "Rubik-Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 16px;
 	color: #2a2a2a;
 	margin-top: 0;
@@ -1124,7 +1137,7 @@ a:hover {
 }
 .hero-about .hero-text {
 	position: relative;
-	font-family: "Rubik-Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 45px;
 	color: #2788e6;
 	font-weight: 300;
@@ -1135,6 +1148,9 @@ a:hover {
 	max-width: 500px;
 	z-index: 3;
 }
+.how-it-works .header .bg h1.about-us-title {
+	margin-bottom: 100px !important;
+}
 .our-vision {
 	padding: 125px 0;
 	text-align: center;
@@ -1143,14 +1159,14 @@ a:hover {
 }
 .our-vision .section-title,
 .about-who .section-title {
-	font-family: "Rubik-Light", sans-serif; 
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 42px;
 	color: #2788e6;
 	margin-bottom: 30px;
 	margin-top: 0;
 }
 .about-desc {
-	font-family: "Rubik-Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 16px;
 	line-height: 27px;
 	margin-top: 0;
@@ -1196,7 +1212,7 @@ a:hover {
 		text-align: center;
 		margin: 0 auto;
 	}
-}	
+}
 
 
 /*CUSTOM SCROLL*/
@@ -1402,7 +1418,7 @@ a:hover {
 	float: right;
 	width: 134px;
 	margin-right: 0;
-	font-family: "Rubik-Medium", sans-serif;
+	font-family: "Rubik Medium", sans-serif;
 	color: #fff;
 	background: #2788e6;
 }
@@ -1455,7 +1471,7 @@ a:hover {
 	}
 }
 .faq-sidebar li {
-	font-family: "Rubik-Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	color: #909194;
 	font-size: 16px;
 	letter-spacing: .25px;
@@ -1464,9 +1480,9 @@ a:hover {
 	border-bottom: 1px solid #d8d8d8;
 	list-style: none;
 	text-transform: uppercase;
-} 
+}
 @media (max-width: 768px) {
-	.faq-sidebar li { 
+	.faq-sidebar li {
 		max-width: 90%;
 	}
 	.faq-content {
@@ -1485,7 +1501,11 @@ a:hover {
 		min-height: 900px;
 	}
 }
-
+@media (max-width: 380px) {
+	.faq-panel-group span {
+		display: none;
+	}
+}
 .faq-panel-group span{
 	float: right;
 }
@@ -1501,7 +1521,7 @@ a:hover {
 	padding: 0;
 	font-size: 16px;
 	background: #fff;
-	font-family: "Rubik-Medium", sans-serif; 
+	font-family: "Rubik Medium", Fallback, sans-serif;
 }
 .panel-heading a {
 	text-decoration: none;
@@ -1518,7 +1538,7 @@ a:hover {
 }
 .faq-panel-group .panel-body {
 	color: #818181;
-	font-family: "Rubik-Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 16px;
 	line-height: 32px;
 }
@@ -1545,29 +1565,21 @@ a:hover {
 	.faq-panel-group {
 		padding-right: 20px;
 	}
-	
+
 }
-@media (min-width: 768px) and (max-width: 992px){ 
+@media (min-width: 768px) and (max-width: 992px){
 	.faq-sidebar ul {
 		padding-left: 10px;
 	}
 }
-@media (min-width: 830px) and (max-width: 992px){ 
+@media (min-width: 830px) and (max-width: 992px){
 	.faq .container {
 		width: 820px;
 	}
 }
 
-
-
-
-
-
-
-
-
 .footer {
-	padding: 60px 0; 
+	padding: 60px 0;
   	padding-bottom: 40px;
 	position: relative;
 	background: url(images/pattern.jpg) no-repeat;
@@ -1576,7 +1588,7 @@ a:hover {
 .footer h4 {
 	margin: 0;
 	margin-bottom: 33px;
-	font-family: "Rubik-Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	font-size: 16px;
 	color: #2788e6;
 	text-transform: uppercase;
@@ -1592,7 +1604,7 @@ a:hover {
 	list-style: none;
 }
 .footer-nav li a {
-	font-family: "Rubik-Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 16px;
 	color: #767676;
 	padding: 2px 0;
@@ -1625,7 +1637,7 @@ a:hover {
 @media (max-width: 768px) {
 	footer .col-xs-12 {
 		width: 50%;
-	  padding-left: 40px; 
+	  padding-left: 40px;
   }
 }
 @media (max-width: 420px){
@@ -1640,40 +1652,11 @@ a:hover {
 }
 
 .copyright {
-  font-family: "Rubik-Light", sans-serif;
+  font-family: "Rubik Light", Fallback, sans-serif;
   font-size: 16px;
   color: #767676;
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Privacy, Cookie, Term*/
 .main-static {
@@ -1706,7 +1689,7 @@ a:hover {
   font-smoothing: antialiased !important;
 }
 .main-static h1 {
-  font-family: "Rubik-Light", helvetica, sans-serif;
+  font-family: "Rubik Light", Fallback, helvetica, sans-serif;
   text-align: center;
   font-size: 42px;
   color: #2788e6;
@@ -1719,7 +1702,7 @@ a:hover {
   margin-bottom: 26px;
 }
 .main-static p.static-title-text, .main-static p.head-title {
-  font-family: "Rubik-Medium", helvetica, sans-serif;
+  font-family: "Rubik Medium", Fallback, sans-serif;
   font-size: 18px;
   color: #909194;
 }
@@ -1732,7 +1715,7 @@ a:hover {
 }
 .main-static p.desc {
   font-size: 16px;
-  font-family: "Rubik-Light", helvetica, sans-serif;
+  font-family: "Rubik Light", Fallback, sans-serif;
   line-height: 28px;
   color: #9d9d9d;
 }
@@ -1769,7 +1752,7 @@ a:hover {
 .main-static .text-button button.static-button{
   border-radius: 5px;
   text-align: center;
-  font-family: 'Rubik-Medium', helvetica, sans-serif;
+  font-family: 'Rubik Medium', Fallback, sans-serif;
   background-color: #2788e6;
   margin: 0;
   color: white;
@@ -1962,7 +1945,7 @@ a:hover {
 
 /*HOW IT WORKS*/
 .how-it-works {
-	font-family: "Rubik-Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 }
 .how-it-works .container,
 .how-it-works .row,
@@ -2014,7 +1997,7 @@ a:hover {
 .how-it-works .header .bg .btn {
   border-radius: 5px;
   text-align: center;
-  font-family: "Rubik-Medium", helvetica, sans-serif;
+  font-family: "Rubik Medium", Fallback, sans-serif;
   background-color: #2788e6;
   margin: 0;
   color: white;
@@ -2082,7 +2065,7 @@ a:hover {
   color: #2788e6;
 }
 .how-it-works section.category-service .choose-category small {
-  font-family: "Rubik-Medium";
+  font-family: "Rubik Medium", Fallback, sans-serif;
   font-size: 14px;
   display: block;
   margin: 0;
@@ -2108,7 +2091,7 @@ a:hover {
   background-color: #2788e6;
   height: 80px;
   color: white;
-  font-family: "Rubik-Medium";
+  font-family: "Rubik Medium", Fallback, sans-serif;
   font-size: 16px;
   padding-left: 65px;
   text-transform: uppercase;
@@ -2148,6 +2131,8 @@ a:hover {
   margin-left: 112px;
   border-radius: 10px;
   height: auto;
+	background-color: white;
+	padding: 20px
 }
 .how-it-works section.featured-service .featured-product figure img {
   border-radius: 10px;
@@ -2319,24 +2304,6 @@ a:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .homepage-hero h1 {
 	width: 100%;
 	max-width: 420px;
@@ -2357,9 +2324,105 @@ a:hover {
 		max-width: 430px !important;
 	}
 }
+@media (max-width: 1200px) {
+	.homepage-hero p {
+		font-size: 18px;
+		line-height: 32px;
+		max-width: 430px !important;
+	}
+}
+@media (min-width: 800px) and (max-width: 992px) {
+	.homepage-hero p {
+		max-width: 320px !important;
+	}
+}
 @media (max-width: 360px) {
 	.homepage-hero h1 {
 		font-size: 35px !important;
 		margin-bottom: 40px !important;
 	}
+}
+.underlined-static{
+	text-decoration: underline #ccc;
+}
+@media (min-width:680px) and (max-width:992px){
+	.homepage-hero .header .bg{
+		height: 400px;
+	}
+	.homepage-hero .header,
+	.homepage-hero .header .container{
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.homepage-hero .header .bg{
+		height: 700px;
+	}
+  .homepage-hero .header{
+		height: 700px
+	}
+  .homepage-hero .header .bg {
+    justify-content: flex-start;
+    text-align: center;
+    background-position: 40% 120%;
+    background-size: 100% auto;
+  }
+  .homepage-hero .header .bg h1, .homepage-hero .header .bg p, .homepage-hero .header .bg button.btn {
+    margin: 0 auto;
+  }
+  .homepage-hero .header .bg h1 {
+    padding-top: 30px;
+    margin-bottom: 20px;
+  }
+  .homepage-hero .header .bg p {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+	.aboutus-hero .header {
+		height: 650px;
+	}
+	.aboutus-hero .header .bg{
+		height: 650px;
+	}
+  
+}
+@media screen and (max-width: 720px) {
+	.aboutus-hero .header {
+		height: 550px;
+	}
+	.aboutus-hero .header .bg{
+		height: 550px;
+	}
+	.aboutus-hero .header .bg {
+	    background-size: 115% auto;
+	}
+  
+}
+@media screen and (max-width: 550px) {
+	.aboutus-hero .header {
+		height: 500px;
+	}
+	.aboutus-hero .header .bg{
+		height: 500px;
+	}
+	.aboutus-hero .header .bg {
+		background-position: 40% 100%;
+	    background-size: 140% auto;
+	}
+  
+}
+@media screen and (max-width: 360px) {
+	.aboutus-hero .header {
+		height: 500px;
+	}
+	.aboutus-hero .header .bg{
+		height: 500px;
+	}
+	.aboutus-hero .header .bg {
+		background-position: 40% 100%;
+	    background-size: 200% auto;
+	}
+  
 }

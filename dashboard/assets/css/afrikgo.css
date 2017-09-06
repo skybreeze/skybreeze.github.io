@@ -1,0 +1,207 @@
+/*
+	* Afrikgo 2017
+*/
+
+body{
+	overflow-x: hidden;
+	font-family: 'Rubik', sans-serif;/*
+	background-image: url('../img/pattern.jpg');
+	background-repeat:repeat-x;
+	top: 15%;*/
+}
+h2{
+	font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color:rgb(39,136,230);
+	line-height: 1.2;
+}
+h4,
+.list-profile h4{
+	color:rgb(39,136,230);
+	font-weight:normal;
+	/*line-height: 2.3;*/
+}
+.detail a,
+.detail a:hover,
+.detail a:focus,
+.list-profile a,
+.list-profile a:hover,
+.list-profile a:focus{
+	text-decoration: none;
+	color:rgb(39,136,230);
+	line-height: 1.929;
+}
+.body-content{
+	background-image: url('../img/pattern.jpg');
+	background-repeat: repeat-x;
+	background-position: 0 35px;
+	min-height: 225px;
+
+}
+.body-content ul>li>a{
+	color: rgb(78,86,94);
+    font-size: 14px;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.body-content ul>li>a:hover{
+	color:rgb(39,136,230);
+	background-color: transparent;
+}
+.body-content .active > a
+{
+  color:rgb(39, 136, 230);
+  background-image: url(../img/active.png);
+  background-repeat: no-repeat;
+  background-position: left -10px bottom 10px;
+
+}
+.body-content button{
+    font-size: 14px;
+    margin-right: 25px;
+    margin-left: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.body-content .row,
+.content,
+.nav-footer{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.detail p,
+.list-profile p{
+	font-size: 16px;
+	/*color: rgb(102,113,124);*/
+	font-weight: 500;
+}
+.detail h4{
+	font-size: 25px;
+}
+.detail p:last-child{
+	font-size: 15px;
+	font-weight: normal;
+	/*color: rgb(39,136,230);*/
+}
+.detail-btn{
+	margin-top: 50px;
+}
+.list h2{
+	font-family: 'Rubik', sans-serif;
+	color:rgb(39,136,230);
+	line-height: 80%;
+	font-size: 40px;
+}
+.header{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.nav-footer{
+	margin-top: 112px;
+	
+}
+.nav-footer h4{
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 35px;
+	margin-top: 25px;
+}
+.nav-footer ul li{
+	font-size: 16px;
+	color: rgb(118,118,118);
+	line-height: 2.188;
+	margin-bottom: 8px;
+}
+.list-profile{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.list-profile img{
+	float: right;
+}
+#messages,
+#messages img{
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+#border-bottom{
+	border: 0.1px solid #ebebeb;
+	width:95%;
+}
+.bottom-detail,
+.bottom-detail a{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color:rgb(118,118,118);
+	margin-bottom: 35px;
+}
+.bottom-detail a:hover,
+.bottom-detail a:focus,
+.footer a:hover,
+.footer a:focus{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color:#337ab7;
+}
+.footer,
+.footer a{
+	margin-top: 50px;
+	background-image: url(../img/pattern-footer.png);
+	height: 75px;
+	font-family: 'Rubik', sans-serif;
+	color:rgb(118,118,118);
+	line-height: 2.188;
+	font-size: 16px;
+	text-decoration: none;
+
+}
+
+@media(min-width: 768px){
+	.verticalLine {
+	  border-right: 1px solid rgb(229,229,229);
+	  height: 87px;
+	  margin: auto;
+	}
+}
+@media(max-width: 767px){
+	body{
+		overflow-x:hidden;
+	}
+  	.detail,
+  	.detail img{
+  		text-align: center;
+  		margin-bottom: 30px;
+  	}
+}
+@media (max-width: 420px){
+	.nav-footer .col-xs-12,
+	.detail {
+		width: 100%;
+	}
+	.list div{
+  		width: 50%;
+  	}
+  	.verticalLine {
+	  border-right: 0px;
+	  height: 87px;
+	  margin: auto;
+	}
+	#messages .col-md-2{
+		width: 100%;
+	}
+	#messages img{
+		text-align: center;
+	}
+}
