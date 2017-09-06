@@ -1535,6 +1535,7 @@ a:hover {
 	background: #fff;
 	border-bottom: 1px solid transparent;
 	border-radius: 0;
+	box-shadow: none;
 }
 .faq-panel-group .panel-body {
 	color: #818181;
@@ -2379,6 +2380,20 @@ a:hover {
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 680px) {
+  .homepage-hero .header{
+		height: 700px
+	}
+  .homepage-hero .header .bg {
+    justify-content: flex-start;
+    text-align: center;
+    background-position: 40% 100%;
+    background-size: 150% auto;
+  }
+  .homepage-hero .header .bg h1, .homepage-hero .header .bg p, .homepage-hero .header .bg button.btn {
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 800px) {
 	.aboutus-hero .header {
 		height: 650px;
@@ -2400,6 +2415,7 @@ a:hover {
 	}
   
 }
+
 @media screen and (max-width: 550px) {
 	.aboutus-hero .header {
 		height: 500px;
