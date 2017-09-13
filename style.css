@@ -7,7 +7,7 @@ body {
 }
 
 body {
-	background: #fefefe;
+/*	background: #fefefe;*/
 }
 
 h1,h2,h3,h4,h5,h6,
@@ -153,6 +153,9 @@ a:hover {
 }
 .main-navbar .navbar-nav > li > a.active {
   color: #2788e6;
+  -webkit-text-shadow: 0px 0px 30px rgba(39, 136, 230, 0.48);
+  -moz-text-shadow: 0px 0px 30px rgba(39, 136, 230, 0.48);
+  text-shadow: 0px 0px 30px rgba(39, 136, 230, 0.48);
 }
 
 @media (max-width: 885px){
@@ -1522,6 +1525,7 @@ a:hover {
 	font-size: 16px;
 	background: #fff;
 	font-family: "Rubik Medium", Fallback, sans-serif;
+    border-bottom: 1px solid #ddd;
 }
 .panel-heading a {
 	text-decoration: none;
@@ -1719,6 +1723,9 @@ a:hover {
   font-family: "Rubik Light", Fallback, sans-serif;
   line-height: 28px;
   color: #9d9d9d;
+}
+.main-static p.desc .text-underline{
+  text-decoration: underline;
 }
 .main-static p.loose {
   line-height: 48px;
@@ -2138,6 +2145,8 @@ a:hover {
 .how-it-works section.featured-service .featured-product figure img {
   border-radius: 10px;
   width: 100%;
+  box-shadow: 0px 0px 21.6px 5.4px rgba(242, 242, 245, 0.45);
+  padding: 20px;
 }
 .how-it-works section.featured-service .featured-product:nth-child(2) figure {
   order: -1;
@@ -2229,6 +2238,7 @@ a:hover {
   }
   .how-it-works section.featured-service .container .featured-product figure {
     margin-bottom: 20px;
+    max-width: 100%;
     }
   .how-it-works section.category-service .choose-category small {
     font-size: 12px;
@@ -2382,16 +2392,32 @@ a:hover {
 }
 @media screen and (max-width: 680px) {
   .homepage-hero .header{
-		height: 700px
+		height: auto;
 	}
   .homepage-hero .header .bg {
     justify-content: flex-start;
     text-align: center;
     background-position: 40% 100%;
     background-size: 150% auto;
+    height: 760px;
   }
   .homepage-hero .header .bg h1, .homepage-hero .header .bg p, .homepage-hero .header .bg button.btn {
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 489px) {
+  .homepage-hero .header{
+    height: auto;
+  }
+  .homepage-hero .header .bg {
+    height: 600px;
+    background-position: bottom center;
+  }
+}
+@media screen and (max-width: 360px) {
+  .homepage-hero .header .bg {
+    height: 500px;
+    background-position: bottom center;
   }
 }
 @media screen and (max-width: 800px) {
@@ -2442,3 +2468,259 @@ a:hover {
 	}
   
 }
+
+
+
+
+/*ADDITIONAL PAGE*/
+.paymentcar {
+	background: #f2f2f2;
+}
+.paymentcar > .container {
+	border: 1px solid #e1e1e1;
+	background: #fff;
+}
+
+.verify-navbar {
+	background: #fff;
+	margin: 0 -15px;
+	padding: 30px 20px;
+	margin-bottom: 10px;
+}
+.verify-navbar:after{
+	content: "."; 
+   	visibility: hidden; 
+   	display: block; 
+   	height: 0; 
+   	clear: both;
+}
+.verify-navbar .logo {
+	float: left;
+}
+.verify-navbar .verify-account {
+	float: right;
+}
+.verify-account .acc {
+	font-size: 15px;
+	font-weight: bold;
+	margin-right: 15px;
+}
+.verify-account .notif {
+	padding: 10px 15px;
+	border-radius: 50%;
+	color: #fff;
+	background: red;
+	margin-right: 15px;
+}
+.verify-account button {
+	border:none;
+	background: transparent;
+	margin-right: 10px;
+	transform: rotate(90deg) scaleX(1.15);	
+}
+
+.payment-footer {
+	background: #f2f2f2;
+	margin: 0 -15px;
+	padding: 15px;
+}
+.payment-footer h4 {
+	font-weight: 600;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+.payment-footer .footer-nav li {
+	padding: 4px 0;
+}
+
+.payment-footer .footer-nav li a {
+	font-family: inherit;
+	color: #258ab8;
+}
+.payment-footer .to-right {
+	text-align: right;
+	margin-top: 30px;
+}
+.payment-footer .lang {
+	display: inline;
+	background: #fff;
+}
+.payment-footer .lang button {
+	background: #fff;
+	padding: 4px 6px;
+	border:1px solid #e1e1e1;
+	text-align: left;
+	width: 70%;
+	min-width: 150px;
+}
+.payment-footer .lang button span {
+	display: block;
+	font-size: 12px;
+	color: #aaa;
+}
+
+.payment-copyright:after {
+	content: "."; 
+   	visibility: hidden; 
+   	display: block; 
+   	height: 0; 
+   	clear: both;
+}
+.payment-copyright p{
+	color: #777;
+}
+
+.payment-copyright .float-left {
+	float: left;
+}
+.payment-copyright .float-right {
+	float: right;
+}
+
+.payment-endnote {
+	background: #dddddd;
+	margin: -15px -15px;
+	margin-top: 0;
+	margin-left: -16px;
+	padding: 20px;
+}
+.payment-endnote p {
+	margin-bottom: 0;
+	color: #777;
+	font-size: 15px;
+}
+
+
+.verify-number {
+	background: #fff;
+	margin: 0 -15px;
+	padding-bottom: 30px;
+}
+.verify-wrapper {
+	display: block;
+	background: #f9f9f9;
+	width: 80%;
+	margin: 0 auto;
+	padding: 15px 20px;
+}
+.verify-header {
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+}
+.verify-header hr {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 0;
+}
+.verify-header:after {
+	content: "."; 
+   	visibility: hidden; 
+   	display: block; 
+   	height: 0; 
+   	clear: both;
+}
+.verify-header img {
+	float: left;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.verify-header h4 {
+	font-weight: normal;
+	font-size: 26px;
+	margin-bottom: 4px;
+	color: #444;
+}
+.verify-header p {
+	color: #666;
+}
+
+.phone-field {
+	margin-bottom: 20px;
+}
+.phone-field select , 
+.phone-field input {
+	float: left;
+	height: 32px;
+	min-width: 200px;
+	padding: 0 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-right: 20px;
+}
+.phone-field button {
+	color: #fff;
+	border-radius: 4px;
+	background: #0087bd;
+	border: none;
+	border-bottom: 2px solid #0072aa;
+	padding: 5px 15px;
+
+}
+.phone-field:after {
+	content: "."; 
+   	visibility: hidden; 
+   	display: block; 
+   	height: 0; 
+   	clear: both;
+}
+.notecode {
+	margin-bottom: 30px;
+	color: #777;
+}
+.verifynote p {
+	color: #14a77b;
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
+.verifynote ul {
+	padding-left: 16px;
+	color: #666;
+}
+
+.verify-header h4.vcode {
+	margin-left: 100px;
+	margin-bottom: 30px;
+}
+
+.sms-notif {
+	background: #0086be;
+	margin: 0 -20px;
+	padding: 17px 30px ;
+	color: #fff;
+	font-size: 17px;
+	margin-bottom: 60px;
+	margin-top: -15px;
+}
+.sms-notif span {
+	font-weight: bold;
+}
+.sms-notif a {
+	color: #fff;
+	text-decoration: underline;
+}
+.verify-wrapper > form {
+	margin-bottom: 25px;
+}
+.verify-wrapper > form > p > input {
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	max-width: 80px;
+	height: 35px;
+	margin-right: 5px;
+	padding: 0 10px;
+}
+
+.verify-wrapper > form > p > button {
+	color: #fff;
+	border-radius: 4px;
+	background: #0087bd;
+	border: none;
+	border-bottom: 2px solid #0072aa;
+	padding: 5px 15px;
+}
+.verify-wrapper > p {
+	color: #777;
+	margin-bottom: 40px;
+}
+

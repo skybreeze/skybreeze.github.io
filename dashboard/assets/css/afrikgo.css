@@ -31,12 +31,18 @@ h4,
 	color:rgb(39,136,230);
 	line-height: 1.929;
 }
-.body-content{
+.body-content
+{
 	background-image: url('../img/pattern.jpg');
 	background-repeat: repeat-x;
 	background-position: 0 35px;
-	min-height: 225px;
-
+	/*min-height: 225px;*/
+}
+.header-msg{
+	background-image: url('../img/pattern.jpg');
+	background-repeat: repeat-x;
+	background-position: 35px 0;
+	top: 250px;
 }
 .body-content ul>li>a{
 	color: rgb(78,86,94);
@@ -61,7 +67,7 @@ h4,
 }
 .body-content button{
     font-size: 14px;
-    margin-right: 25px;
+    /*margin-right: 25px;*/
     margin-left: 15px;
     font-weight: 500;
     margin-bottom: 15px;
@@ -74,23 +80,79 @@ h4,
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 20px;
+}
+.content .notif{
+	margin-left: 40px;
+	margin-top: 25px;
+}
+.body-content .me{
+	background-color: #f5f5f5;
+	margin-bottom: 25px;
+}
+.body-content .minim-panel{
+	width: 75%;
+}
+.body-content .wto-content{
+	margin-top: 150px;
+}
+.detail{
+	padding-bottom: 15px;
+}
+.detail,
+.rides{
+	vertical-align: middle;
+	padding-top: 15px;
 }
 .detail p,
 .list-profile p{
 	font-size: 16px;
 	/*color: rgb(102,113,124);*/
 	font-weight: 500;
+	margin-left: 10px;
 }
 .detail h4{
 	font-size: 25px;
+	margin-left: 10px;
 }
-.detail p:last-child{
+/*.detail p:last-child{
 	font-size: 15px;
 	font-weight: normal;
-	/*color: rgb(39,136,230);*/
+	
+}*/
+.detail .rides{
+	font-weight: normal;
 }
+.detail .rides .nominal{
+	font-size: 22px;
+	color:rgb(39,136,230);
+	text-align: right;
+	padding-bottom: 5px;
+}
+.detail .rides .pull-right,
+.body-content .pull-right{
+	text-align: right;
+}
+
 .detail-btn{
 	margin-top: 50px;
+}
+.detail .text-muted{
+	font-weight: normal;
+}
+.nominal{
+	font-size: 22px;
+	color:rgb(39,136,230);
+	text-align: right;
+	padding-bottom: 5px;
+}
+#messages .rides img{
+	vertical-align: middle;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.rides .glyphicon-calendar{
+	color:rgb(39,136,230);
 }
 .list h2{
 	font-family: 'Rubik', sans-serif;
@@ -125,16 +187,20 @@ h4,
 	padding: 0;
 }
 .list-profile img{
-	float: right;
+	float: left;
 }
 #messages,
-#messages img{
+#messages .img
+{
 	margin-top: 15px;
 	margin-bottom: 30px;
 }
 #border-bottom{
 	border: 0.1px solid #ebebeb;
-	width:95%;
+	width:97%;
+}
+.address img{
+	vertical-align: middle;
 }
 .bottom-detail,
 .bottom-detail a{
@@ -174,6 +240,11 @@ h4,
 	  height: 87px;
 	  margin: auto;
 	}
+	#messages .col-md-8,
+	#messages .col-md-8 .col-md-4{
+	margin-left: 0;
+	padding-left: 0;
+}
 }
 @media(max-width: 767px){
 	body{
@@ -184,6 +255,17 @@ h4,
   		text-align: center;
   		margin-bottom: 30px;
   	}
+  	.detail .rides{
+  		text-align: center;
+  		margin-top: 25px;
+  	}
+  	.detail .rides .pull-right,
+  	.detail .rides .nominal{
+	text-align: center;
+	}
+	.body-content .minim-panel{
+	width: 75%;
+	}
 }
 @media (max-width: 420px){
 	.nav-footer .col-xs-12,
