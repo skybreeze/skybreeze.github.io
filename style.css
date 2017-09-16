@@ -2724,3 +2724,237 @@ a:hover {
 	margin-bottom: 40px;
 }
 
+
+.ride-summary {
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+.ride-summary h4 {
+	padding: 10px 15px;
+	font-size: 19px;
+	background: #fafafa;
+	border-bottom: 1px solid #ccc;
+}
+.ride-summary ul {
+	padding-left: 15px;
+	padding-top: 10px;
+}
+.ride-summary ul li {
+	list-style: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.ride-summary i {
+	margin-top: 0px;
+	margin-right: 10px;
+}
+.ride-summary hr {
+	border:none;
+	width: 90%;
+	border-bottom: 1px solid #ddd;
+}
+.ride-summary .ride-item {
+	padding-left: 20px;
+}
+.ride-summary .driver-status {
+	color: #2dc499;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.pay-title {
+	padding: 16px 20px;
+	font-size: 20px;
+	margin: 0 -15px;
+	color: #fff;
+	background: #0085be;
+	margin-bottom: 20px;
+}
+.pay-title i {
+	margin-right: 7px;
+}
+.goback {
+	margin-bottom: 20px;
+}
+.save {
+	border: 1px solid #ddd;
+}
+.save-header {
+	background: #6ccfb2 ;
+	padding: 10px 20px;
+	color: #259d82;
+}
+.save-header p {
+	margin-bottom: 0;
+	font-size: 18px;
+}
+.save .detail {
+	padding: 20px;
+}
+.save .detail img {
+	float: left;
+	margin-right: 10px;
+}
+.save .detail p:nth-child(2){
+	color: #72be3a;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+.save .detail p:nth-child(3){
+	color: #aaa;
+	font-size: 14px;
+}
+
+
+.pay-benefit {
+	padding: 20px 0;
+	background: #f2f2f2;
+	margin-bottom: 20px;
+}
+.pay-benefit div{
+	padding: 0 20px;
+}
+.pay-benefit div:nth-child(1){
+	border-right: 1px solid #ddd;
+}
+.pay-benefit div:nth-child(3){
+	border-left: 1px solid #ddd;
+}
+.pay-benefit div img {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 10px;	
+}
+.pay-benefit p {
+	font-size: 14px;
+	margin-bottom: 0;
+	padding-right: 15px;
+}
+.pay-benefit p span {
+	font-weight: bold;
+}
+
+.payment-form {
+	padding: 20px;
+	background: #f2f2f2;
+	margin-bottom: 30px;
+}
+.payment-form > h4 {
+	margin-bottom: 20px;
+}
+.payment-form > form > h4 {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.payment-form > form > h4 > span {
+	color: #aaa;
+	font-size: 15px;
+	float: right;
+	margin: 0 10px;
+}
+.payment-form p {
+	margin-bottom: 25px;
+}
+.payment-form form > p > select {
+	padding: 5px;
+}
+.payment-form form button {
+	padding: 12px 15px;
+	background: #0089bd;
+	color: #fff;
+	font-size: 17px;
+	border: none;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+.payment-form form button i {
+	margin-right:  10px;
+}
+.payment-panel {
+	background: #fff;
+	padding: 0 10px;
+	margin-bottom: 20px !important;
+}
+.payment-panel .panel-heading {
+	background: #fff;
+}
+.payment-panel .panel-heading h4 {
+	font-size: 18px;
+	padding: 7px 0;
+}
+.payment-panel .panel-heading h4 > img{
+	display: inline-block;
+	width: 50px;
+}
+.payment-panel .panel-heading h4 > img:nth-child(2){
+	margin-left: 20px;
+}
+.payment-panel .panel-heading h4 > img:nth-child(3){
+	margin-left: 10px;
+}
+.payment-panel .panel-heading .payment-total {
+	font-weight: bold;
+	float: right;
+	font-size: 16px;
+}
+
+.payment-panel .panel-heading a[aria-expanded="true"] span img {
+	transform: rotate(-90deg);
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.payment-panel .panel-heading a[aria-expanded="false"] span img {
+	transform: rotate(90deg);
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.payment-panel .panel-body {
+	padding-bottom: 0;
+	border-bottom: 1px solid #ddd;
+}
+.payment-panel .panel-body ul {
+	padding-left: 0;
+}
+.payment-panel .panel-body ul li {
+	list-style: none;
+	padding: 10px 0;
+	font-size: 16px;
+}
+.payment-panel .panel-body ul li span.b {
+	font-weight: bold;
+}
+.payment-panel .panel-body ul li span.lprice {
+	float: right;
+}
+.pay-field {
+	border: 1px solid #ddd;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+
+}
+.cvv {
+	max-width: 80px;
+	float: left;
+	margin-right: 10px;
+}
+.cvv-img {
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+.cvv-det {
+	font-size: 13px;
+	color: #aaa;
+	margin-top: -1px;
+}
+.payment-panel .panel-body .col-md-5 p {
+	margin-bottom: 15px;
+}
+
+.paypal-panel {
+	text-align:center;
+}
+.paypal-panel p {
+	text-align: left;
+}
